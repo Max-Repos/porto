@@ -1,20 +1,20 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+//   const form = useRef();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_123457",
-      "template_0et3e1i",
-      form.current,
-      "a1vZFimaWXZWeY7K9"
-    );
-    e.target.reset();
-  };
+//     emailjs.sendForm(
+//       "service_123457",
+//       "template_0et3e1i",
+//       form.current,
+//       "a1vZFimaWXZWeY7K9"
+//     );
+//     e.target.reset();
+//   };
 
   return (
     <>
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
           <div className="contact__content">
             <h3 className="contact__title">Write your Feedback</h3>
-            <form ref={form} onSubmit={sendEmail} className="contact__form">
+            <form  className="contact__form">
               <div className="contact__form-div">
                 <label className="contact__form-tag">Name</label>
                 <input
